@@ -1,0 +1,7 @@
+__pycache__
+.vscode/
+.idea/
+out/
+cmake-build-debug
+CMakeLists.txt
+*.iml
