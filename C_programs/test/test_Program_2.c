@@ -1,39 +1,24 @@
-#include <stdio.h>
-#include <string.h>
 #include <assert.h>
+#include "Utils.h"
 #include "Program_2.h"
 
-int print_test_case(int const num, const char* input, const int expected_output, const int actual_output)
-{
-    printf("\nTest Case %d :\n",num);
-    printf("Input : %s\n", input);
-    printf("Expected Output : %d\n", expected_output);
-    printf("Actual Output : %d\n", actual_output);
-
-    if(expected_output != actual_output)
-    {
-        printf("Result: Test case failed\n");
-        return 0;
-    }
-    printf("Result: Test case passed\n");
-    return 1;
-}
-
 void test_find_max_diff() {
-    // Test cases
+    // Define test cases
     int arr1[] = {34, 8, 10, 3, 2, 80, 30, 33, 1};
-    assert(print_test_case(1, "[34, 8, 10, 3, 2, 80, 30, 33, 1]", 6, find_max_diff(arr1, 9)));
-
     int arr2[] = {9, 2, 3, 4, 5, 6, 7, 8, 18, 0};
-    assert(print_test_case(2, "[9, 2, 3, 4, 5, 6, 7, 8, 18, 0]", 8, find_max_diff(arr2, 10)));
-
     int arr3[] = {1, 2, 3, 4, 5, 6};
-    assert(print_test_case(3, "[1, 2, 3, 4, 5, 6]", 5, find_max_diff(arr3, 6)));
-
     int arr4[] = {6, 5, 4, 3, 2, 1};
-    assert(print_test_case(4, "[6, 5, 4, 3, 2, 1]", 0, find_max_diff(arr4, 6)));
 
-    printf("All tests passed!\n");
+    int* arrays[] = {arr1, arr2, arr3, arr4};
+    constexpr int sizes[] = {ARRAY_SIZE(arr1), ARRAY_SIZE(arr2), ARRAY_SIZE(arr3), ARRAY_SIZE(arr4)};
+    constexpr int expected_outputs[] = {6, 8, 5, 0};
+
+    // Run test cases
+    for (int i = 0; i < ARRAY_SIZE(arrays); ++i) {
+        const int actual_output = find_max_diff(arrays[i], sizes[i]);
+        print_test_case(i + 1, "array", "int", arrays[i], sizes[i], expected_outputs[i], actual_output);
+        assert(expected_outputs[i] == actual_output);
+    }
 }
 
 int main() {
