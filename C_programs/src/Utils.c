@@ -41,6 +41,30 @@ void print_test_case(const int num, const char* input_type, const char* output_t
         printf("Input : ");
         print_array(input, n);
         printf("\n");
+    } else if (strcmp(input_type, "2arrays") == 0) {
+        const int* arr1 = va_arg(args, const int*);
+        const int* arr2 = va_arg(args, const int*);
+        const int n = va_arg(args, int);
+        const int m = va_arg(args, int);
+        printf("Input : ");
+        print_array(arr1, n);
+        printf(", ");
+        print_array(arr2, m);
+        printf("\n");
+    } else if (strcmp(input_type, "3arrays") == 0) {
+        const int* arr1 = va_arg(args, const int*);
+        const int* arr2 = va_arg(args, const int*);
+        const int* arr3 = va_arg(args, const int*);
+        const int n = va_arg(args, int);
+        const int m = va_arg(args, int);
+        const int l = va_arg(args, int);
+        printf("Input : ");
+        print_array(arr1, n);
+        printf(", ");
+        print_array(arr2, m);
+        printf(", ");
+        print_array(arr3, l);
+        printf("\n");
     }
 
     if (strcmp(output_type, "str") == 0) {

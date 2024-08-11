@@ -2,6 +2,7 @@ __pycache__
 .vscode/
 .idea/
 out/
+venv/
 cmake-build-debug
 CMakeLists.txt
 *.iml
