@@ -1,0 +1,94 @@
+Program_1
+    Write a program to check if the given number is even or odd
+
+Program_2
+    Given an array arr[] of N positive integers. The task is to find the maximum of j - i subjected to the constraint of arr[i] <= arr[j].
+    input: {34, 8, 10, 3, 2, 80, 30, 33, 1}
+        output = 6 ( j = 7 , i = 1 )
+    input: {9, 2, 3, 4, 5, 6, 7, 8, 18, 0}
+        Output: 8 (j = 8 , i = 0 )
+    input: {1, 2, 3, 4, 5, 6}
+        output = 5 ( j = 5 i = 0 )
+    input: {6, 5, 4, 3, 2, 1}
+        output = 0
+
+Program_3
+    Rearrange array in alternating positive & negative items with O(1) extra space
+    Given an array having and, our task is to arrange them in an fashion such that every positive number is followed by a negative number and vice-versa maintaining the. The number of positive and negative numbers need not to be equal. If there are more positive numbers then they have to appear at the end of the array, same condition for negative numbers also.
+    input = arr[] = {1, 2, 3, -4, -1, 4}
+        output = arr[] = {-4, 1, -1, 2, 3, 4}
+    input = arr[] = {-5, -2, 5, 2, 4, 7, 1, 8, 0, -8}
+        output = arr[] = {-5, 5, -2, 2, -8, 4, 7, 1, 8, 0}
+
+Program_4
+    Find Missing Number in Array
+    Given an array  of size with integers in the range of , the task is to find the missing number from the first  integers.
+    There are no duplicates in the list.
+    input: arr[] = {1, 2, 4, 6, 3, 7, 8} , N = 8
+        output = 5
+        Here the size of the array is 8, so the range will be [1, 8]. The missing number between 1 to 8 is 5
+    input: arr[] = {1, 2, 3, 5}, N = 5
+        output = 4
+        Here the size of the array is 4, so the range will be [1, 5]. The missing number between 1 to 5 is 4
+
+Program_5
+    Concatenate given array twice
+    Given an array  of elements, the task is to concatenate it twice, i.e. create an array of size  by appending the copy of the given array to itself.
+    input: arr[] = {1, 2, 1}
+        output = 1 2 1 1 2 1
+        Explanation: The given array arr[] = {1, 2, 1}, can be appended to itself resulting in arr[] = {1, 2, 1, 1, 2, 1}.
+    input: arr[] = {1, 3, 2, 1}
+        output = 1 3 2 1 1 3 2 
+        
+Program_6
+    Maximum Sum Path in Two Arrays
+    Given two  arrays having some elements in common. Find the sum of the maximum sum path to reach from the beginning of any array to the end of any of the two arrays. We can switch from one array to another array only at common elements. 
+    The common elements do not have to be at the same indexes. And individual arrays have  elements only (no repetition within the array).
+    input: ar1[] = {2, 3, 7, 10, 12}, ar2[] = {1, 5, 7, 8}
+        output = 35
+        35 is sum of 1 + 5 +  + 10 + 12.
+        Start from the first element of  which is 1, then move to 5, then 7.  From 7 switch to  (as  is common) and traverse 10 and 12.
+    input: ar1[] = {10, 12}, ar2 = {5, 7, 9}
+        output = 22
+        22 is the sum of 10 and 12. 
+        Since there is no common element, take all elements from the array with more sum.
+    input: ar1[] = {2, 3, 7, 10, 12, 15, 30, 34}, ar2[] = {1, 5, 7, 8, 10, 15, 16, 19}
+        output = 122
+        122 is sum of 1, 5, 7, 8, 10, 12, 15, 30, 34
+        Start from the first element of  which is 1, then move to 5, then 7. From 7 switch to  (as  is common), then traverse the remaining .
+
+Program_7
+    Finding Common Elements in Three Arrays
+    You are given three arrays arr1, arr2, and arr3 of sizes n1, n2, and n3 respectively. Write a program to find and print all the elements that are common in all three arrays.
+    The first line of input contains the size of the first array n1, followed by n1 elements of the array arr1.
+    The second line of input contains the size of the second array n2, followed by n2 elements of the array arr2.
+    The third line of input contains the size of the third array n3, followed by n3 elements of the array arr3.
+    Print the elements that are common in all three arrays.
+    Input: 
+        arr1 = [1, 2, 3] 
+        arr2 = [2, 3, 4] 
+        arr3 = [3, 4, 5] 
+    Output: 
+        [3]
+
+Program_8
+    Longest sub-array having sum k
+    Given an array  of size  containing integers. The problem is to find the length of the longest sub-array having sum equal to the given value .
+    input: arr[] = { 10, 5, 2, 7, 1, 9 }, k = 15
+        output = 4
+        The sub-array is 5, 2, 7, 1.
+    input: arr[] = {-5, 8, -14, 2, 4, 12}, k = -5
+        output = 5
+        The sub-array is -5, 8, -14, 2, 4.
+
+Program_9
+    Find common elements in three sorted arrays
+    Given three sorted arrays in  order, print all common elements in these arrays.
+    In case of duplicate common elements, print only once.
+    input: A[] = {1, 5, 10, 20, 30} , B[] = {5, 13, 15, 20}, C[] = {5, 20} 
+        output: 5 20
+        5 and 20 are common in all the arrays.
+    input: A[] = {1, 5, 10, 20, 30}, B[] = {5, 13, 15, 20}, C[] = {5, 20} 
+        output: 5
+        5 occurs multiple times in all the three arrays but it will be printed once.
+

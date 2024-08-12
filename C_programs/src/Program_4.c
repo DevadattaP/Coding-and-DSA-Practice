@@ -1,6 +1,3 @@
-//
-// Created by DELL on 24-07-2024.
-//
 #include "Program_4.h"
 
 int findMissingNumber(int arr[], const int size) {

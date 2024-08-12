@@ -1,7 +1,3 @@
-//
-// Created by DELL on 11-08-2024.
-//
-
 #ifndef PROGRAM_6_H
 #define PROGRAM_6_H
 

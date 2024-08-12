@@ -1,6 +1,3 @@
-//
-// Created by DELL on 11-08-2024.
-//
 #include <Program_7.h>
 #include <stdlib.h>
 

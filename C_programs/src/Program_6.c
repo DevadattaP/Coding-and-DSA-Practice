@@ -1,6 +1,3 @@
-//
-// Created by DELL on 11-08-2024.
-//
 #include <Program_6.h>
 
 // Function to find the maximum sum path between two arrays
